@@ -1,0 +1,161 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #f1c40f;
+}
+
+.ox{
+    width: 80px;
+    height: 14px;
+    background-color: black;
+    position: absolute;
+    left: 720px;
+    top: 365px;
+    transform: rotate(-4deg);
+    border-radius: 3px 10px 3px 0;
+}
+
+.head{
+    width: 35px;
+    height: 35px;
+    background-color: black;
+    background-color: black;
+    border-radius: 50%;
+    position: absolute;
+    left: 860px;
+    top: 350px;
+    animation: 1ms tek infinite;
+}
+
+p{
+    font-size: 20px;
+    position: absolute;
+    left: 730px;
+    top: 430px;
+}
+
+.human{
+    width: 200px;
+    height: 100px;
+    background-color: black;
+    margin: 300px auto;
+    -webkit-clip-path: polygon(78% 77%, 85% 72%, 95% 78%, 92% 92%, 81% 99%, 0 93%, 69% 84%);
+clip-path: polygon(78% 77%, 85% 72%, 95% 78%, 92% 92%, 81% 99%, 0 93%, 69% 84%);
+}
+
+.human , .ox{
+    animation: 1ms tek infinite;
+}
+
+@keyframes tek{
+    10%{
+        transform: translateY(5px);
+    }
+}
+
+.dood{
+    width: 40px;
+    height: 1.5px;
+    background-color: black;
+    position: absolute;
+    left: 720px;
+    border-radius: 10px;
+}
+
+@keyframes dood{
+   
+    70%{
+        background-color: rgba(5, 5, 5,0.3);
+    }
+    80%{
+        background-color: rgba(5, 5, 5,0.1);
+    }
+    100%{
+        left: 580px;
+        background-color: rgba(5, 5, 5, 0);
+    }
+}
+
+.dood1{
+    top: 369px;
+    animation: 150ms dood infinite;
+}
+
+.dood2{
+    top: 371px;
+    animation: 160ms dood infinite;
+}
+
+.dood3{
+    top: 374px;
+    animation: 170ms dood infinite;
+}
+
+.dood4{
+    top: 376px;
+    animation: 160ms dood infinite;
+}
+
+.dood5{
+    top: 379px;
+    animation: 180ms dood infinite;
+}
+
+.meh{
+    width: 500px;
+    height: 2px;
+    background-color: black;
+    border-radius: 10px;
+    position: absolute;
+    
+}
+
+@keyframes meh{
+    0%{
+        background-color: rgba(5, 5, 5, 0);
+    }
+    10%{
+        background-color: rgba(5, 5, 5, 0.2);
+    }
+    20%{
+        background-color: rgba(5, 5, 5, 0.5);
+    }
+    80%{
+        background-color: rgba(5, 5, 5, 0.5);
+    }
+    90%{
+        background-color: rgba(5, 5, 5, 0.2);
+    }
+    100%{
+        background-color: rgba(5, 5, 5, 0);
+        transform: translateX(-1300px);
+    }
+}
+
+.meh1{
+    top: 200px;
+    right: 0;
+    animation: 400ms 0.7s meh infinite;
+}
+
+.meh2{
+    top: 300px;
+    right: 0;
+    animation: 380ms 2s meh infinite;
+}
+
+.meh3{
+    top: 600px;
+    right: 0;
+    animation: 370ms 1s meh infinite;
+}
+
+.meh4{
+    top: 550px;
+    right: 0;
+    animation: 370ms 3s meh infinite;
+}
